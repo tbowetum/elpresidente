@@ -1,4 +1,4 @@
-package com.game.app;
+package main.java.com.game.app;
 
 /**
  * Hello world!

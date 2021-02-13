@@ -1,4 +1,4 @@
-package com.game.app;
+package test.java.com.game.app;
 
 import static org.junit.Assert.assertTrue;
 
