@@ -18,6 +18,11 @@ public class Factions {
 	public int getSatisfactions() {
 		return satisfactions;
 	}
+
+	@Override
+	public String toString() {
+		return "Factions [nbpartisans=" + nbpartisans + ", satisfactions=" + satisfactions + "]";
+	}
 	
 	
 	
