@@ -1,19 +1,22 @@
 package main.java.com.game.app;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 /**
  * Hello world!
  *
  */
 public class App 
 {
-    public static void main( String[] args ) {
+    public static void main( String[] args ) throws FileNotFoundException, IOException {
     	
-        Factions f = new Factions(15, 100);
-        Macker e = Macker.Agriculture ;
+        /*Macker e = Macker.Agriculture ;
         
-        e.increaseVal(45);
+        e.increaseVal(45);*/
+      
         
-        //System.out.println(e.getAmount());
-        
+        Start start=new Start();
+        start.show();
     }
 }

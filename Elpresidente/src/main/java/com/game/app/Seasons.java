@@ -1,40 +1,36 @@
 package main.java.com.game.app;
 
 
+import java.time.Year;
 import java.util.*;
 
 public class Seasons {
 	
-	private int nbRounds;
-	private Date date;
+	private Year date;
 	private Event event;
-	private ArrayList<String> season;	
+	private Season season;
 	
-	
-	public void makeDecision() {
-		
-	}
-	
-	
-	public int getNbRounds() {
-		return nbRounds;
+	public Seasons(Year date, Event event, Season season) {
+		super();
+		this.date = date;
+		this.event = event;
+		this.season = season;
 	}
 
-
-	public Date getDatte() {
+	public Year getDate() {
 		return date;
 	}
-
 
 	public Event getEvent() {
 		return event;
 	}
 
-
-	public ArrayList<String> getSeason() {
+	public Season getSeason() {
 		return season;
 	}
 
-
-
+	@Override
+	public String toString() {
+		return String.format("Seasons [date=%s, event=%s, season=%s]", date, event, season);
+	}
 }
