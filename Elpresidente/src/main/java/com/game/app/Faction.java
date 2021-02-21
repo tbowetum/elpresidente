@@ -10,6 +10,7 @@ public enum Faction {
 	Nationalists(15,50), 
 	religious(15,50);
 
+	
 	int supporter, satisfaction;
 	private Faction(int supporter, int satisfaction) {
 		this.supporter = supporter;

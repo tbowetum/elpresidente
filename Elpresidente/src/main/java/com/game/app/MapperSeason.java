@@ -7,8 +7,8 @@ import java.util.*;
 public class MapperSeason extends MapperBase<Seasons> {
 		protected Seasons Map(String[] record) {
 			Year yr = Year.parse(record[0]);
-			Event e = new Event(record[1], record[2], Faction.valueOf(record[3]));
-			Season s = Season.valueOf(record[4]);
+			Event e = new Event(record[1], record[2], Faction.valueOf(record[3]), Macker.valueOf(record[4]));
+			Season s = Season.valueOf(record[5]);
 			
 			Seasons season = new Seasons(yr, e, s);
 			return season;

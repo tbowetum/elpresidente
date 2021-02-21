@@ -7,13 +7,13 @@ import java.util.*;
 public class Seasons {
 	
 	private Year date;
-	private Event event;
+	private ArrayList<Event> events;
 	private Season season;
 	
-	public Seasons(Year date, Event event, Season season) {
+	public Seasons(Year date, Season season) {
 		super();
 		this.date = date;
-		this.event = event;
+	
 		this.season = season;
 	}
 
@@ -21,16 +21,15 @@ public class Seasons {
 		return date;
 	}
 
-	public Event getEvent() {
-		return event;
-	}
+	
 
 	public Season getSeason() {
 		return season;
 	}
-
-	@Override
-	public String toString() {
-		return String.format("Seasons [date=%s, event=%s, season=%s]", date, event, season);
+	
+	public void addEvent(Event event) {
+		events.add(event);
 	}
+	
+	
 }

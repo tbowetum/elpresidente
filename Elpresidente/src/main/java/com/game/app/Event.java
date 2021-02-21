@@ -3,33 +3,32 @@ package main.java.com.game.app;
 import java.util.*;
 
 public class Event {
-	private String eventName;
-	private String evenSolution;
-	private Faction faction;
+	private String name;
+	private String question;
+	private ArrayList<Choice> choices;
 	
-	public Event(String eventName, String evenSolution, Faction faction) {
-		super();
-		this.eventName = eventName;
-		this.evenSolution = evenSolution;
-		this.faction = faction;
+	
+	public Event(String name, String question) {
+		this.name = name;
+		this.question = question;
 	}
 
-	public String getEventName() {
-		return eventName;
+
+	public String getName() {
+		return name;
 	}
 
-	public String getEvenSolution() {
-		return evenSolution;
+
+	public String getQuestion() {
+		return question;
 	}
 
-	public Faction getFaction() {
-		return faction;
+	public void addChoice(Choice choice) {
+		choices.add(choice);
 	}
 
-	@Override
-	public String toString() {
-		return String.format("Event [eventName=%s, evenSolution=%s, faction=%s]", eventName, evenSolution, faction);
-	}
-
+	
+	
+	
 	
 }

@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class Elpresidente {
 	
 	private String answer;
+	private Macker mark;
+	private Faction fac;
 
 	public Elpresidente(String answer) {
 		super();
