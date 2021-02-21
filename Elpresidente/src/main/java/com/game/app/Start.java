@@ -20,12 +20,12 @@ public class Start {
 			
 			output = scan.nextLine();
 			
-			switch(output){
+			/*switch(output){
 				case("1"):
 					Play faction = new Play();
 					faction.show();
 					break;
-			}
+			}*/
 		}while(!output.equals("2"));
 	}
 }

@@ -56,7 +56,7 @@ public class Factions {
 	public String toString() {
 		return "Factions [name=" + name + "]";
 	}
-	public Factions getFaction(string name) {
+	public void getFaction(String name) {
 		
 	}
 	

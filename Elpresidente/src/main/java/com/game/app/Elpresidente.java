@@ -34,7 +34,7 @@ public class Elpresidente {
 
 			output = scan.nextLine();
 
-			switch (output) {
+			/*switch (output) {
 			case ("1"):
 				Play p = new Play();
 				p.show();
@@ -43,7 +43,7 @@ public class Elpresidente {
 			case ("2"):
 				
 				break;
-			}
+			}*/
 
 		} while (!output.equals("5"));
 		

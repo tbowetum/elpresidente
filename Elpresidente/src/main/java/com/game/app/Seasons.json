@@ -1,0 +1,93 @@
+{
+  "parti1": {
+	    "date": "1918",
+	    "events": [
+	      
+	        "name": "castatrophe naturelle",
+	        "question": "inondation dans toute la ville que faire",
+	        "choice":[
+	          {
+	            "content": "",
+	            "factionConsequences": {
+	              "capitalists": 0,
+	              "Communists": 0,
+	              "Ecologists": 0,
+	              "liberals": 0,
+	              "Loyalists": 0,
+	              "Militarists": 0,
+	              "Nationalists": 0,
+	              "religious": 0
+	            },
+	            "markerConsequences": {
+	              "industry": 0,
+	              "Agriculture": 10
+	            },
+	            "treasury": 100
+	          }
+	        ]
+	      
+	    ],
+	    "season": "printemps"
+	  },
+	  
+  "parti2": {
+	    "date": "1918",
+	    "events": [
+	      {
+	        "name": "Guerre",
+	        "question": "L'armÃ© allemand attack paris",
+	        "choice": [
+	          {
+	            "content": "fournir les armes aux militaires",
+	            "factionConsequences": {
+	              "capitalists": 5,
+	              "Communists": 5,
+	              "Ecologists": -5,
+	              "liberals": 0,
+	              "Loyalists": 0,
+	              "Militarists": 10,
+	              "Nationalists": 5,
+	              "religious": 0
+	            },
+	            "markerConsequences": {
+	              "industry": 0,
+	              "Agriculture": 0
+	            },
+	            "treasury": 20
+	          }
+	        ]
+	      }
+	    ],
+	    "season": "été"
+	  },
+  "parti3": {
+	    "date": "1918",
+	    "events": [
+	      {
+	        "name": "castatrophe naturelle",
+	        "question": "inondation dans toute la ville que faire",
+	        "choice": [
+	          {
+	            "content": "",
+	            "factionConsequences": {
+	              "capitalists": 0,
+	              "Communists": 0,
+	              "Ecologists": 0,
+	              "liberals": 0,
+	              "Loyalists": 0,
+	              "Militarists": 0,
+	              "Nationalists": 0,
+	              "religious": 0
+	            },
+	            "markerConsequences": {
+	              "industry": 0,
+	              "Agriculture": 10
+	            },
+	            "treasury": "20"
+	          }
+	        ]
+	      }
+	    ],
+	    "season": "automne"
+	  },
+}

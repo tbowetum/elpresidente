@@ -1,58 +1,55 @@
 package main.java.com.game.app;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
+import com.google.gson.*;
+/*import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;*/
 
-public class Play {
-	
-	private Faction nbSup;
-	protected int satisfaction;
-	
-	public Play(int nbSup, int satisfaction) {
-		super();
-		this.nbSup.supporter = 15;
-		this.satisfaction = satisfaction;
-	}
-	
+public class Play{
+	Seasons season;
 	public Play() {
-		super();
-	}
-
-	public void show() {
-		ObjectReaderSeasons obj = new ObjectReaderSeasons();
-		ArrayList<Seasons> seasons =obj.execute();
-		
-		
-		String output;
-		Scanner scan = new Scanner(System.in);
-		output = null;
-		do {
-			for(Seasons s: seasons) {
-				s.getDate();
-				
-				System.out.println("-Année :");
-				System.out.printf("%s ", "Année :", s.getDate().getValue());
-				System.out.println(s.getEvent().getEventName());
-				System.out.printf("1 - Play", s.getEvent().getEvenSolution() );
-				System.out.println("2 - No reaction");
-				System.out.println("Make a choice :");
-	
-				output = scan.nextLine();
-				switch (output) {
-				case ("1"):
-					
-					break;
-				case ("2"):
-					s.getEvent().getFaction().reduceSupporter(5);					
-					break;
-				}}
-
-		} 
-		while (!output.equals(" "));
 		
 	}
 	
-	
+	@SuppressWarnings("deprecation")
+	public void getInfo() {
+	JsonParser jsonP = new JsonParser();
+		
+	      try {
+	    	  
+	         Object jsonO = jsonP.parse(new FileReader("..\\elpresidente 2\\Elpresidente\\src\\main\\java\\com\\game\\app\\Seasons.json"));
+	         JsonObject jsonObject = (JsonObject) jsonO;
+	         String date = jsonObject.get("date").getAsString();
+	         Season season = Season.valueOf(jsonObject.get("season").getAsString());
+	         
+	         
+	         JsonArray event = (JsonArray)jsonObject.get("event").getAsJsonArray();
+	         
+	         /*for (JsonElement i : event) {
+	        	 System.out.println(i);
+	         }*/ 
+	         System.out.println(date);
+	         System.out.println(season);
+	         //System.out.println(event);
+	         
+	        
+	      } 
+	      catch (FileNotFoundException e) {
+	         e.printStackTrace();
+	      } 
+	      catch (IOException e) {
+	         e.printStackTrace();
+	      } 
+	      
+	}
+		
 	
 
 }

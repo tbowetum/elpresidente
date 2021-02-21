@@ -4,18 +4,18 @@ public enum Season {
 	spring(1), summer(2), fall(3), winter(4);
 	private int id;
 	private String name;
+	
 	Season(int i) {
-		// TODO Auto-generated constructor stub
 		this.id=i;
 		
 		if(i==1) {
 			this.name="printemps";
 		}
 		else if(i==2) {
-			this.name="ete";
+			this.name="été";
 		}
 		else if(i==3) {
-			this.name="autumn";
+			this.name="Automne";
 
 		}
 		else if(i==4) {
